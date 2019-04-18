@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://10.10.15.251/sell?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+  redis:
+    host: 10.10.15.251
+    port: 6379
+server:
+  servlet:
+    context-path: /sell
+
+
+wechat:
+  mpAppId: wxfd5d749b043c2a73
+  mpAppSecret: 2a00827221f10b5fdbc926adc87e1f06
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
+  mchId: 1483469312
+  mchKey: 06C56A89949D617xxxxxxxxxxx
+  #keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://zouqianyu.natapp1.cc/sell/pay/notify
+  templateId:
+    orderStatus: e-Cqq67QxD6YNI41iRiqawEYdFavW_7pc7LyEMb-yeQ
+
+projecturl:
+  wechatMpAuthorize: http://zouqianyu.natapp1.cc
+  wechatOpenAuthorize: http://zouqianyu.natapp1.cc
+  sell: http://zouqianyu.natapp1.cc
